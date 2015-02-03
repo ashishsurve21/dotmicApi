@@ -19,4 +19,5 @@ Example :- To use DotmicApi
 import dotmic
 
 prd = dotmic.Dotmic(Api_key)
+
 result = prd.search(product_name)
