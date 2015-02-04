@@ -12,6 +12,10 @@ class Dotmic:
 
 
 	def search(self, query, count=3):
+		
+		if count > 10:
+			count = 3
+			
 		query = query.split(" ")
 		try:
 			qr = "+".join(query)
